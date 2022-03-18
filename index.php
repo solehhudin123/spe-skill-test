@@ -48,7 +48,8 @@
   $find = findNeedle(["merah", "biru", "kuning", "hitam", "abu-abu"], "biru");
   echo "EXAMPLE findNeedle(['merah', 'biru', 'kuning', 'hitam', 'abu-abu'], 'biru') <br>";
   echo "HASIL EXAMPLE : ";
-  echo (!empty($find)) ? "Ditemukan ".implode('; ', $find):"Tidak ditemukan.";
+  echo (!empty($find)) ? "Ditemukan ".implode('; ', $find)." &nbsp;":"Tidak ditemukan.";
+  var_dump($find);
   echo "<br><br><br>";
   echo "Soal nomer 4 : THE BLUE OCEAN REVERSE <br>";
   $a = blueOcean([1,2,3,4,6,10], [1]);
